@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <title>たいとる</title>
+  <link="stylesheet" href="index.css">
+ </head>
+ <body>
+  <header>
+   <h1>サイト</h1>
+  </header>
+
+  <section>
+   <h2>ページ</h2>
+    <ol>
+     <li>りんご</li>
+     <li>みかん</li>
+   </ol>
+  </section>
+
+  <footer>
+   <p>これを見たあなたはラッキー！</p>
+  </footer>
+ </body> 
+</html>
