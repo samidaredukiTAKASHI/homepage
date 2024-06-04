@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボタンカウンターアプリ</title>
+</head>
+<body>
+    <h1>ボタンカウンターアプリ</h1>
+    <button id="countButton">ボタンを押す</button>
+    <p id="countDisplay">現在のカウント: 0</p>
+
+    <script>
+        // ボタンがクリックされたときの処理
+        const countButton = document.getElementById("countButton");
+        const countDisplay = document.getElementById("countDisplay");
+        let count = 0;
+
+        countButton.addEventListener("click", () => {
+            count++;
+            // ボーナスカウントの条件をチェック
+            if (count % 100 === 0) {
+                count += 5;
+            }
+            countDisplay.textContent = `現在のカウント: ${count}`;
+        });
+    </script>
+</body>
+</html>
