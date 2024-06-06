@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="ja">
- <head>
-  <meta charset="utf-8">
-  <title>たいとる</title>
-  <link="stylesheet" href="index.css">
- </head>
- <body>
-  <header>
-   <h1>サイト</h1>
-  </header>
+<head>
+<meta charset="UTF-8">
+<title>わがんなブログ</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    background-color: #DDD;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .content {
+    border: solid 1px #000;
+    margin: 20px auto;
+    width: 80%;
+    height: 300px; /* 必要に応じて調整してください */
+    position: relative; /* 内部の要素を配置するために必要 */
+  }
+  .inner-content {
+    border: solid 1px #000;
+    width: calc(50% - (2 * 10px)); /* パディングを差し引いた幅を調整 */
+    height: calc(100% - (2 * 10px)); /* パディングを差し引いた高さを調整 */
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
+  }
+  .button-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  button {
+    padding: 15px;
+    background-color: #AAA;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
 
-  <section>
-   <h2>ページ</h2>
-    <ol>
-     <li>りんごはうまい。</li>
-     <li>みかん</li>
-     
-   </ol>
-  </section>
-  
-  <footer>
-   <p>これを見たあなたはラッキー！</p>
-  </footer>
- </body> 
+<div class="header">わがんなブログ</div>
+
+<div class="content">
+  <div class="inner-content">工<br>彡</div>
+  <!-- ここにさらなるコンテンツを追加してください -->
+</div>
+
+<div class="button-section">
+  <button>ボタン</button>
+</div>
+
+</body>
 </html>
